@@ -7,7 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 10.times do
-
-Article.create(title: Faker::Company.catch_phrase, content: Faker::Lorem.paragraphs(number: 3))
+Article.create(title: Faker::Company.catch_phrase, content: Faker::Lorem.paragraph_by_chars)
 
 end

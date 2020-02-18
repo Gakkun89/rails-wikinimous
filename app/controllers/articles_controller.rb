@@ -33,8 +33,8 @@ class ArticlesController < ApplicationController
     end
   end
 
-  def delete
-    @task.destroy
+  def destroy
+    @article.destroy
     redirect_to articles_path
   end
 
